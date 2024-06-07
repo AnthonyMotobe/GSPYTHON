@@ -62,12 +62,14 @@ opc_pesquisas = [
   }
 ]
 
+# Função para validar sim e não
 def validadorBinario(selecao, mensagem):
     validador = selecao
     while not validador.upper() in opc_binario:
         validador = input(mensagem)
     return validador.upper()
 
+# Função para realizar a entradado usuário no sistema
 def entrar():
     selecao = input("Você deseja acessar o sistema? (S/N): ")
     binario = validadorBinario(selecao, "Opção inválida! Por favor, digite 'S' para sim ou 'N' para não: ")
@@ -79,6 +81,7 @@ def entrar():
         else:
             print("Obrigado por acessar a plataforma DMO!")
 
+# Função para validar se o valor é numérico
 def validadorNumerico(selecao, mensagem):
     validador = selecao
     while not validador.isnumeric():
@@ -86,6 +89,7 @@ def validadorNumerico(selecao, mensagem):
     validador = int(validador)
     return validador
 
+# Função para validar a seleção do usuário em relação as pesquisas
 def validadorSelecao(numero, mensagem):
     validador = numero
     while not 0 <= validador <= len(opc_pesquisas) - 1:
@@ -95,6 +99,7 @@ def validadorSelecao(numero, mensagem):
     validador = int(validador)
     return validador
 
+# Função para verificar o status da pesquisa
 def status(ph, movimento_peixes, temperatura):
     if ph < 7:
         status_do_ph = "Ácida"
@@ -119,6 +124,7 @@ def status(ph, movimento_peixes, temperatura):
 
     return {"ph": status_do_ph, "peixes": status_dos_peixes, "temperatura": status_da_temperatura}
 
+# Função para inicializar o sistema
 def inicializador():
     print("Que bom que está aqui. Vamos começar!\n")
     while True:
