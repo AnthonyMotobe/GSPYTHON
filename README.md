@@ -1,9 +1,9 @@
 # Global Solution Computational Thinking With Python
 
-1. [Integrantes](#Integrantes)
-2. [Descrição do Projeto](#Descrição)
-3. [Instruções de Uso](#Instruções)
-4. [Contribuições](#Contribuições)
+1. [Integrantes](#integrantes)
+2. [Descrição do Projeto](#descrição-do-projeto)
+3. [Instruções de Uso](#instruções-de-uso)
+4. [Contribuições](#contribuições)
 
 
 ## Integrantes
